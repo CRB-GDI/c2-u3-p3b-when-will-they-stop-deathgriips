@@ -33,13 +33,20 @@ namespace ProgrammingAssignment2
 				// and the comment below. You can of
 				// course add more space between the
 				// comments as needed
-				int i = GetValue();
-				while (i != -1)
+
+				// Declare variables
+				int value = GetValue();
+				int sum = 0;
+				int count = 0;
+				// Start while loop
+				while (value != -1)
 				{
-					Console.WriteLine(i);
-
+					sum = sum + value;
+					count++;
 				}
-
+				// End while loop
+				int avg = sum / count;
+				Console.WriteLine(count + avg);
 				// Don't add or modify any code below
 				// this comment
 				input = Console.ReadLine();
