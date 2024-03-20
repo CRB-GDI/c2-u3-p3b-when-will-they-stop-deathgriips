@@ -43,10 +43,11 @@ namespace ProgrammingAssignment2
 				{
 					sum = sum + value;
 					count++;
+					value = GetValue();
 				}
 				// End while loop
-				int avg = sum / count;
-				Console.WriteLine(count + avg);
+				float avg = (float)sum / count;
+				Console.Write(count + " " + avg);
 				// Don't add or modify any code below
 				// this comment
 				input = Console.ReadLine();
